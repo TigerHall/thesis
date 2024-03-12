@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+
+<head>
+  <meta charset="utf-8" />
+</head>
+
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%;width: 99%; margin:0 auto;"></div>
+
+  <script type="text/javascript" src="./js/echarts.min.js"></script>
+
+  <script type="text/javascript">
+    var dom = document.getElementById("container");
+    var myChart = echarts.init(dom, 'null', {
+      renderer: "canvas",
+      useDirtyRect: false,
+    });
+    var app = {};
+
+    var option;
+
+    option = {
+      // 所用数据集
+      dataset: [
+        {
+          source: [
+            ['Name', 'Value'],
+            ['EXOTIC', 22],
+            ['IGNEOUS:PLUTONIC:FELSIC', 25],
+            ['IGNEOUS:PLUTONIC:INTERMEDIATE', 4],
+            ['IGNEOUS:PLUTONIC:MAFIC', 126],
+            ['IGNEOUS:PLUTONIC:ULTRAMAFIC', 201],
+            ['IGNEOUS:VOLCANIC:CLASTIC', 245],
+            ['IGNEOUS:VOLCANIC:FELSIC', 69],
+            ['IGNEOUS:VOLCANIC:INTERMEDIATE', 815],
+            ['IGNEOUS:VOLCANIC:MAFIC', 7926],
+            ['IGNEOUS:VOLCANIC:ULTRAMAFIC', 7],
+            ['METAMORPHIC', 161],
+            ['ORE', 162],
+            ['SEDIMENTARY:SILICICLASTIC', 4],
+            ['XENOLITH', 222],
+            ['(空白)', 379]
+          ],
+        },
+        {
+          transform: {
+            type: 'sort',
+            // 按分数排序
+            config: { dimension: 'Name', order: 'desc' }
+          }
+        },
+        {
+          transform: {
+            type: 'sort',
+            // 按分数排序
+            config: { dimension: 'Name', order: 'asc' }
+          }
+        },
+      ],
+      // 工具箱
+      toolbox: {
+        show: true,
+        feature: {
+          mark: { show: true },
+          dataView: { show: true, readOnly: false },
+          restore: { show: true },
+          saveAsImage: {
+            show: true,
+            pixelRatio: 5,
+            backgroundColor: "rgba(0,0,0,0)",
+          },
+        },
+      },
+      // 标题
+      title: {
+        show: false,
+        text: "05_PetDB成岩类型饼图",
+        subtext: '',
+        left: "center",
+        textStyle: {
+          // fontSize: 30,
+          fontFamily: "'Times New Roman','宋体'",
+        },
+      },
+      // 提示框
+      tooltip: {
+        trigger: "item",
+        type: "line",
+        formatter: "{c} ({d}%) ",
+        textStyle: {
+          fontFamily: "'Times New Roman','宋体'",
+        },
+      },
+      // 图例
+      legend: {
+        type: "scroll",
+        orient: "vertical",
+        top: 'center',
+        left: 20,
+        textStyle: {
+          fontSize: 18,
+          fontFamily: "'Times New Roman','宋体'",
+          textBorderColor: "rgba(255, 255, 255, 1)",
+          textBorderWidth: 2,
+          textBorderType: 'solid',
+        },
+        datasetIndex: 0,
+      },
+      // 数据系列
+      series: [
+        {
+          name: '岩性类型',
+          type: "pie",
+          radius: "55%",
+          left: "22%",
+          // 数据标签（引导线）
+          label: {
+            position: "outer",
+            alignTo: "none",
+            formatter: "{b}:{d}% ",
+            bleedMargin: 5,
+            textStyle: {
+              fontSize: 16,
+              fontFamily: "'Times New Roman','宋体'",
+            },
+          },
+          // 选中强调效果
+          emphasis: {
+            itemStyle: {
+              shadowBlur: 16,
+              shadowOffsetX: 1,
+              shadowColor: "rgba(0, 0, 0, 0.6)",
+            },
+          },
+          // 调用数据集的哪个成果
+          datasetIndex: 2,
+        },
+      ],
+    };
+
+    if (option && typeof option === "object") {
+      myChart.setOption(option);
+    }
+    window.addEventListener("resize", myChart.resize);
+
+  </script>
+</body>
+
+</html>
