@@ -13,7 +13,8 @@
   <script type="text/javascript">
     var dom = document.getElementById("container");
     var myChart = echarts.init(dom, 'null', {
-      renderer: "canvas",
+      // renderer: "canvas",
+      renderer: "svg",
       useDirtyRect: false,
     });
     var app = {};
@@ -57,7 +58,7 @@
           restore: { show: true },
           saveAsImage: {
             show: true,
-            pixelRatio: 5,
+            pixelRatio: 10,
             backgroundColor: "rgba(0,0,0,0)",
           },
         },
