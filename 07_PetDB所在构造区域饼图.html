@@ -6,15 +6,15 @@
 </head>
 
 <body style="height: 100%; margin: 0">
-  <div id="container" style="height: 100%;width: 99%; margin:0 auto;"></div>
+  <div id="container" style="height: 100%;width: 24cm; margin:0 auto;"></div>
 
   <script type="text/javascript" src="./asset/js/echarts.min.js"></script>
 
   <script type="text/javascript">
     var dom = document.getElementById("container");
     var myChart = echarts.init(dom, 'null', {
-      // renderer: "canvas",
-      renderer: "svg",
+      renderer: "canvas",
+      // renderer: "svg",
       useDirtyRect: false,
     });
     var app = {};
@@ -27,31 +27,31 @@
         {
           source: [
             ['Name', 'Value'],
-            ['ASEISMIC_RIDGE', 223],
-            ['BACK-ARC_BASIN', 695],
-            ['CONTINENTAL_RIFT', 265],
-            ['CONVERGENT_MARGIN', 250],
-            ['FAILED_RIFT', 6],
-            ['FOREARC', 152],
-            ['FOSSIL_RIDGE', 25],
-            ['FRACTURE_ZONE', 234],
-            ['INCIPIENT_RIFT', 86],
-            ['INTRAPLATE_CRATON', 170],
-            ['INTRAPLATE_OFF-CRATON', 487],
-            ['UNKNOWN', 1],
-            ['OCEAN_BASIN', 3],
-            ['OCEAN_ISLAND', 871],
-            ['OCEANIC_PLATEAU', 257],
-            ['OFF-AXIS_SPREADING_CENTER', 91],
-            ['OLD_OCEANIC_CRUST', 533],
-            ['OPHIOLITE', 134],
-            ['RIFT_VALLEY', 68],
-            ['SEAMOUNT', 903],
-            ['SPREADING_CENTER', 3668],
-            ['TRANSFORM_FAULT', 6],
-            ['TRENCH', 54],
-            ['TRIPLE_JUNCTION', 7],
-            ['VOLCANIC_ARC', 1179]
+            ['Aseismic_Ridge', 223],
+            ['Back-Arc_Basin', 695],
+            ['Continental_Rift', 265],
+            ['Convergent_Margin', 250],
+            ['Failed_Rift', 6],
+            ['Forearc', 152],
+            ['Fossil_Ridge', 25],
+            ['Fracture_Zone', 234],
+            ['Incipient_Rift', 86],
+            ['Intraplate_Craton', 170],
+            ['Intraplate_Off-Craton', 487],
+            ['Unknown', 1],
+            ['Ocean_Basin', 3],
+            ['Ocean_Island', 871],
+            ['Oceanic_Plateau', 257],
+            ['Off-Axis_Spreading_Center', 91],
+            ['Old_Oceanic_Crust', 533],
+            ['Ophiolite', 134],
+            ['Rift_Valley', 68],
+            ['Seamount', 903],
+            ['Spreading_Center', 3668],
+            ['Transform_Fault', 6],
+            ['Trench', 54],
+            ['Triple_Junction', 7],
+            ['Volcanic_Arc', 1179]
           ],
         },
         {
@@ -105,6 +105,7 @@
       },
       // 图例
       legend: {
+        show: false,
         type: "scroll",
         orient: "vertical",
         top: 'center',
@@ -124,9 +125,9 @@
         {
           name: '岩构造类型',
           type: "pie",
-          radius: "55%",
+          radius: "45%",
           top: '4%',
-          left: '20%',
+          left: '0%',
           // 数据标签（引导线）
           label: {
             position: "outer",
@@ -134,7 +135,7 @@
             formatter: "{b}:{d}% ",
             bleedMargin: 5,
             textStyle: {
-              fontSize: 16,
+              fontSize: 18,
               fontFamily: "'Times New Roman','宋体'",
             },
           },

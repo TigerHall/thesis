@@ -6,15 +6,15 @@
 </head>
 
 <body style="height: 100%; margin: 0">
-  <div id="container" style="height: 100%;width: 99%; margin:0 auto;"></div>
+  <div id="container" style="height: 100%;width: 24cm; margin:0 auto;"></div>
 
   <script type="text/javascript" src="./asset/js/echarts.min.js"></script>
 
   <script type="text/javascript">
     var dom = document.getElementById("container");
     var myChart = echarts.init(dom, 'null', {
-      // renderer: "canvas",
-      renderer: "svg",
+      renderer: "canvas",
+      // renderer: "svg",
       useDirtyRect: false,
     });
     var app = {};
@@ -27,16 +27,16 @@
         {
           source: [
             ['NAME', 'Value'],
-            ['BASALT(玄武岩)', 29036],
-            ['UNKNOW(未知岩性)', 9700],
-            ['ANDESITE(安山岩)', 5681],
-            ['THOLEIITE(拉斑玄武岩)', 2974],
-            ['TEPHRA(火山灰)', 2309],
-            ['BASANITE(碧玄岩)', 1371],
-            ['RHYOLITE(流纹岩)', 1363],
-            ['DACITE(英安岩)', 1257],
-            ['GRANITE(花岗岩)', 1008],
-            ['GABBRO(辉长岩)', 968],
+            ['Basalt(玄武岩)', 29036],
+            ['Unknow(未知岩性)', 9700],
+            ['Andesite(安山岩)', 5681],
+            ['Tholeiite(拉斑玄武岩)', 2974],
+            ['Tephra(火山灰)', 2309],
+            ['Basanite(碧玄岩)', 1371],
+            ['Rhyolite(流纹岩)', 1363],
+            ['Dacite(英安岩)', 1257],
+            ['Granite(花岗岩)', 1008],
+            ['Gabbro(辉长岩)', 968],
             ['其他', 15175]
           ],
         },
@@ -91,6 +91,7 @@
       },
       // 图例
       legend: {
+        show: false,
         type: "scroll",
         orient: "vertical",
         top: 'center',
@@ -109,8 +110,8 @@
         {
           name: '岩性分类',
           type: "pie",
-          radius: "55%",
-          left: "16%",
+          radius: "45%",
+          left: "0%",
           // 数据标签（引导线）
           label: {
             position: "outer",
@@ -118,7 +119,7 @@
             formatter: "{b}:{d}% ",
             bleedMargin: 5,
             textStyle: {
-              fontSize: 24,
+              fontSize: 18,
               fontFamily: "'Times New Roman','宋体'",
             },
           },

@@ -6,15 +6,15 @@
 </head>
 
 <body style="height: 100%; margin: 0">
-  <div id="container" style="height: 100%;width: 99%; margin:0 auto;"></div>
+  <div id="container" style="height: 100%;width: 24cm; margin:0 auto;"></div>
 
   <script type="text/javascript" src="./asset/js/echarts.min.js"></script>
 
   <script type="text/javascript">
     var dom = document.getElementById("container");
     var myChart = echarts.init(dom, 'null', {
-      // renderer: "canvas",
-      renderer: "svg",
+      renderer: "canvas",
+      // renderer: "svg",
       useDirtyRect: false,
     });
     var app = {};
@@ -27,15 +27,15 @@
         {
           source: [
             ['Name', 'zh', 'Value'],
-            ['EXOTIC（外来岩)', '外来岩', 44],
-            ['IGNEOUS（火成岩)', '火成岩', 64823],
-            ['METAMORPHIC（变质岩)', '变质岩', 1362],
-            ['ORE（矿石)', '矿石', 483],
-            ['SEDIMENTARY（沉积岩)', '沉积岩', 2127],
-            ['UNKNOWN（未知)', '未知', 925],
-            ['VEIN（脉状矿床（脉岩）)', '脉状矿床（脉岩）', 127],
-            ['XENOLITH（捕虏岩)', '捕虏岩', 439],
-            ['XENOLITHIC（捕虏体)', '捕虏体', 512]
+            ['Exotic（外来岩)', '外来岩', 44],
+            ['Igneous（火成岩)', '火成岩', 64823],
+            ['Metamorphic（变质岩)', '变质岩', 1362],
+            ['Ore（矿石)', '矿石', 483],
+            ['Sedimentary（沉积岩)', '沉积岩', 2127],
+            ['Unknown（未知)', '未知', 925],
+            ['Vein（脉状矿床（脉岩）)', '脉状矿床（脉岩）', 127],
+            ['Xenolith（捕虏岩)', '捕虏岩', 439],
+            ['Xenolithic（捕虏体)', '捕虏体', 512]
           ],
         },
         {
@@ -89,6 +89,7 @@
       },
       // 图例
       legend: {
+        show: false,
         type: "scroll",
         orient: "vertical",
         top: 'center',
@@ -107,7 +108,7 @@
         {
           name: '岩性类型',
           type: "pie",
-          radius: "55%",
+          radius: "45%",
           // 数据标签（引导线）
           label: {
             position: "outer",
@@ -115,7 +116,7 @@
             formatter: "{b}:{d}% ",
             bleedMargin: 5,
             textStyle: {
-              fontSize: 24,
+              fontSize: 18,
               fontFamily: "'Times New Roman','宋体'",
             },
           },

@@ -6,15 +6,15 @@
 </head>
 
 <body style="height: 100%; margin: 0">
-  <div id="container" style="height: 100%;width: 99%; margin:0 auto;"></div>
+  <div id="container" style="height: 100%;width: 24cm; margin:0 auto;"></div>
 
   <script type="text/javascript" src="./asset/js/echarts.min.js"></script>
 
   <script type="text/javascript">
     var dom = document.getElementById("container");
     var myChart = echarts.init(dom, 'null', {
-      // renderer: "canvas",
-      renderer: "svg",
+      renderer: "canvas",
+      // renderer: "svg",
       useDirtyRect: false,
     });
     var app = {};
@@ -27,21 +27,21 @@
         {
           source: [
             ['Name', 'Value'],
-            ['EXOTIC', 22],
-            ['IGNEOUS:PLUTONIC:FELSIC', 25],
-            ['IGNEOUS:PLUTONIC:INTERMEDIATE', 4],
-            ['IGNEOUS:PLUTONIC:MAFIC', 126],
-            ['IGNEOUS:PLUTONIC:ULTRAMAFIC', 201],
-            ['IGNEOUS:VOLCANIC:CLASTIC', 245],
-            ['IGNEOUS:VOLCANIC:FELSIC', 69],
-            ['IGNEOUS:VOLCANIC:INTERMEDIATE', 815],
-            ['IGNEOUS:VOLCANIC:MAFIC', 7926],
-            ['IGNEOUS:VOLCANIC:ULTRAMAFIC', 7],
-            ['METAMORPHIC', 161],
-            ['ORE', 162],
-            ['SEDIMENTARY:SILICICLASTIC', 4],
-            ['XENOLITH', 222],
-            ['UNKNOWN', 379]
+            ['Exotic', 22],
+            ['Igneous:Plutonic:Felsic', 25],
+            ['Igneous:Plutonic:Intermediate', 4],
+            ['Igneous:Plutonic:Mafic', 126],
+            ['Igneous:Plutonic:Ultramafic', 201],
+            ['Igneous:Volcanic:Clastic', 245],
+            ['Igneous:Volcanic:Felsic', 69],
+            ['Igneous:Volcanic:Intermediate', 815],
+            ['Igneous:Volcanic:Mafic', 7926],
+            ['Igneous:Volcanic:Ultramafic', 7],
+            ['Metamorphic', 161],
+            ['Ore', 162],
+            ['Sedimentary:Siliciclastic', 4],
+            ['Xenolith', 222],
+            ['Unknown', 379]
           ],
         },
         {
@@ -95,6 +95,7 @@
       },
       // 图例
       legend: {
+        show: false,
         type: "scroll",
         orient: "vertical",
         top: 'center',
@@ -113,16 +114,19 @@
         {
           name: '岩性类型',
           type: "pie",
-          radius: "55%",
+          radius: "35%",
           left: "22%",
           // 数据标签（引导线）
           label: {
+            // show: false,
+            // showAbove: false,
+            smooth: 1,
             position: "outer",
             alignTo: "none",
             formatter: "{b}:{d}% ",
             bleedMargin: 5,
             textStyle: {
-              fontSize: 16,
+              fontSize: 12,
               fontFamily: "'Times New Roman','宋体'",
             },
           },
