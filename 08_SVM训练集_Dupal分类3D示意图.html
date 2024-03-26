@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>铅同位素-3D散点图</title>
+                <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts.min.js"></script>
+            <script type="text/javascript" src="https://assets.pyecharts.org/assets/v5/echarts-gl.min.js"></script>
+
+</head>
+<body >
+    <div id="00" class="chart-container" style="width:900px; height:500px; text-align:center; margin: auto"></div>
+    <script>
+        var chart_00 = echarts.init(
+            document.getElementById('00'), 'white', {renderer: 'canvas'});
+        var option_00 = {
+    "animation": true,
+    "animationThreshold": 2000,
+    "animationDuration": 1000,
+    "animationEasing": "cubicOut",
+    "animationDelay": 0,
+    "animationDurationUpdate": 300,
+    "animationEasingUpdate": "cubicOut",
+    "animationDelayUpdate": 0,
+    "aria": {
+        "enabled": false
+    },
+    "color": [
+        "#5470c6",
+        "#91cc75",
+        "#fac858",
+        "#ee6666",
+        "#73c0de",
+        "#3ba272",
+        "#fc8452",
+        "#9a60b4",
+        "#ea7ccc"
+    ],
+    "series": [
+        {
+            "type": "scatter3D",
+            "name": "\u6709Dupal\u5f02\u5e38",
+            "data": [
+                [
+                    18.418,
+                    15.492,
+                    37.965
+                ],
+                [
+                    18.232,
+                    15.4725,
+                    37.977
+                ],
+                [
+                    18.417,
+                    15.5,
+                    38.012
+                ],
+                [
+                    18.399,
+                    15.4815,
+                    38.0305
+                ],
+                [
+                    18.6215,
+                    15.4705,
+                    38.0945
+                ],
+                [
+                    18.617,
+                    15.48,
+                    38.095
+                ],
+                [
+                    18.572,
+                    15.482,
+                    38.097
+                ],
+                [
+                    18.638,
+                    15.451,
+                    38.098
+                ],
+                [
+                    18.583,
+                    15.479,
+                    38.101
+                ],
+                [
+                    18.6285,
+                    15.4745,
+                    38.1135
+                ],
+                [
+                    18.594,
+                    15.484,
+                    38.121
+                ],
+                [
+                    18.656,
+                    15.489,
+                    38.152
+                ],
+                [
+                    18.82,
+                    15.506,
+                    38.166
+                ],
+                [
+                    18.657,
+                    15.488,
+                    38.169
+                ],
+                [
+                    18.685,
+                    15.489,
+                    38.17
+                ],
+                [
+                    18.689,
+                    15.488,
+                    38.187
+                ],
+                [
+                    18.74625,
+                    15.49475,
+                    38.193
+                ],
+                [
+                    18.6325,
+                    15.497,
+                    38.2035
+                ],
+                [
+                    18.711,
+                    15.49,
+                    38.207
+                ],
+                [
+                    18.687,
+                    15.505,
+                    38.207
+                ],
+                [
+                    18.6675,
+                    15.4985,
+                    38.208
+                ],
+                [
+                    18.699,
+                    15.5,
+                    38.21
+                ],
+                [
+                    18.4575,
+                    15.535,
+                    38.2345
+                ],
+                [
+                    18.763,
+                    15.4915,
+                    38.24375
+                ],
+                [
+                    18.911,
+                    15.514,
+                    38.319
+                ],
+                [
+                    18.685,
+                    15.55966667,
+                    38.38233333
+                ],
+                [
+                    18.998,
+                    15.613,
+                    38.468
+                ],
+                [
+                    19.045,
+                    15.557,
+                    38.554
+                ],
+                [
+                    18.769,
+                    15.56,
+                    38.623
+                ],
+                [
+                    18.804,
+                    15.5615,
+                    38.6815
+                ],
+                [
+                    19.0335,
+                    15.591,
+                    38.756
+                ],
+                [
+                    18.968,
+                    15.551,
+                    38.767
+                ],
+                [
+                    19.1505,
+                    15.6025,
+                    38.793
+                ],
+                [
+                    19.316,
+                    15.631,
+                    38.987
+                ],
+                [
+                    19.327,
+                    15.6335,
+                    39.0065
+                ],
+                [
+                    19.4485,
+                    15.6405,
+                    39.068
+                ],
+                [
+                    19.243,
+                    15.632,
+                    39.315
+                ]
+            ],
+            "label": {
+                "show": false,
+                "margin": 8
+            },
+            "grid3DIndex": 0,
+            "itemStyle": {
+                "color": "red",
+                "borderColor": "#000",
+                "borderWidth": 1,
+                "opacity": 0.7
+            },
+            "markPoint": {
+                "symbol": "arrow",
+                "symbolSize": 5,
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "color": "#fff",
+                    "margin": 8
+                }
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        },
+        {
+            "type": "scatter3D",
+            "name": "\u65e0Dupal\u5f02\u5e38",
+            "data": [
+                [
+                    16.5838,
+                    15.35785,
+                    36.8709
+                ],
+                [
+                    17.097,
+                    15.418,
+                    37.288
+                ],
+                [
+                    16.959,
+                    15.504,
+                    37.32
+                ],
+                [
+                    17.1805,
+                    15.4342,
+                    37.3867
+                ],
+                [
+                    17.2738,
+                    15.4427,
+                    37.4116
+                ],
+                [
+                    17.2434,
+                    15.4496,
+                    37.4273
+                ],
+                [
+                    17.788,
+                    15.462,
+                    37.547
+                ],
+                [
+                    17.709,
+                    15.411,
+                    37.565
+                ],
+                [
+                    17.7635,
+                    15.4295,
+                    37.5875
+                ],
+                [
+                    18.078,
+                    15.454,
+                    37.59
+                ],
+                [
+                    17.813,
+                    15.443,
+                    37.594
+                ],
+                [
+                    17.594,
+                    15.473,
+                    37.612
+                ],
+                [
+                    17.792,
+                    15.4105,
+                    37.619
+                ],
+                [
+                    17.867,
+                    15.46,
+                    37.648
+                ],
+                [
+                    17.441,
+                    15.48,
+                    37.663
+                ],
+                [
+                    17.91375,
+                    15.4635,
+                    37.702
+                ],
+                [
+                    17.8694,
+                    15.4732,
+                    37.7278
+                ],
+                [
+                    17.944,
+                    15.409,
+                    37.743
+                ],
+                [
+                    17.954,
+                    15.485,
+                    37.754
+                ],
+                [
+                    17.96,
+                    15.4545,
+                    37.7565
+                ],
+                [
+                    17.9135,
+                    15.4655,
+                    37.771
+                ],
+                [
+                    18.223,
+                    15.469,
+                    37.781
+                ],
+                [
+                    17.931,
+                    15.455,
+                    37.785
+                ],
+                [
+                    17.947,
+                    15.461,
+                    37.796
+                ],
+                [
+                    18.017,
+                    15.45,
+                    37.81
+                ],
+                [
+                    17.964,
+                    15.454,
+                    37.819
+                ],
+                [
+                    17.95,
+                    15.466,
+                    37.821
+                ],
+                [
+                    18.0325,
+                    15.4505,
+                    37.826
+                ],
+                [
+                    17.972,
+                    15.478,
+                    37.829
+                ],
+                [
+                    18.011,
+                    15.459,
+                    37.845
+                ],
+                [
+                    17.77775,
+                    15.5012,
+                    37.862
+                ],
+                [
+                    17.96,
+                    15.466,
+                    37.865
+                ],
+                [
+                    18.0925,
+                    15.4745,
+                    37.8775
+                ],
+                [
+                    17.894,
+                    15.459,
+                    37.887
+                ],
+                [
+                    17.933,
+                    15.491,
+                    37.912
+                ],
+                [
+                    17.935,
+                    15.479,
+                    37.938
+                ],
+                [
+                    18.2269,
+                    15.4992,
+                    37.9639
+                ],
+                [
+                    18.064,
+                    15.468,
+                    37.964
+                ],
+                [
+                    18.237,
+                    15.499,
+                    37.976
+                ],
+                [
+                    18.2423,
+                    15.5023,
+                    37.9802
+                ],
+                [
+                    18.1694,
+                    15.4888,
+                    38.00775
+                ],
+                [
+                    17.974,
+                    15.513,
+                    38.027
+                ],
+                [
+                    18.289,
+                    15.5095,
+                    38.0463
+                ],
+                [
+                    18.128,
+                    15.475,
+                    38.047
+                ],
+                [
+                    18.373,
+                    15.509,
+                    38.096
+                ],
+                [
+                    18.3663,
+                    15.5162,
+                    38.1243
+                ],
+                [
+                    18.35155,
+                    15.51475,
+                    38.13555
+                ],
+                [
+                    18.4122,
+                    15.5253,
+                    38.1444
+                ],
+                [
+                    18.4263,
+                    15.5262,
+                    38.1701
+                ],
+                [
+                    18.4067,
+                    15.5268,
+                    38.1741
+                ],
+                [
+                    18.23205,
+                    15.47885,
+                    38.24645
+                ],
+                [
+                    18.284,
+                    15.508,
+                    38.249
+                ],
+                [
+                    18.198,
+                    15.512,
+                    38.262
+                ],
+                [
+                    18.282,
+                    15.491,
+                    38.273
+                ],
+                [
+                    18.365,
+                    15.503,
+                    38.353
+                ],
+                [
+                    18.261,
+                    15.552,
+                    38.37
+                ]
+            ],
+            "label": {
+                "show": false,
+                "margin": 8
+            },
+            "grid3DIndex": 0,
+            "itemStyle": {
+                "color": "blue",
+                "borderColor": "#fff",
+                "borderWidth": 1,
+                "opacity": 0.7
+            },
+            "markPoint": {
+                "symbol": "arrow",
+                "symbolSize": 5,
+                "label": {
+                    "show": true,
+                    "position": "inside",
+                    "color": "#fff",
+                    "margin": 8
+                }
+            },
+            "rippleEffect": {
+                "show": true,
+                "brushType": "stroke",
+                "scale": 2.5,
+                "period": 4
+            }
+        }
+    ],
+    "legend": [
+        {
+            "data": [
+                "\u6709Dupal\u5f02\u5e38",
+                "\u65e0Dupal\u5f02\u5e38"
+            ],
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14,
+            "backgroundColor": "transparent",
+            "borderColor": "#ccc",
+            "borderWidth": 0.5,
+            "borderRadius": 0,
+            "pageButtonItemGap": 5,
+            "pageButtonPosition": "end",
+            "pageFormatter": "{current}/{total}",
+            "pageIconColor": "#2f4554",
+            "pageIconInactiveColor": "#aaa",
+            "pageIconSize": 15,
+            "animationDurationUpdate": 800,
+            "selector": false,
+            "selectorPosition": "auto",
+            "selectorItemGap": 7,
+            "selectorButtonGap": 10
+        }
+    ],
+    "tooltip": {
+        "show": true,
+        "trigger": "item",
+        "triggerOn": "mousemove|click",
+        "axisPointer": {
+            "type": "line"
+        },
+        "showContent": true,
+        "alwaysShowContent": false,
+        "showDelay": 0,
+        "hideDelay": 100,
+        "enterable": false,
+        "confine": false,
+        "appendToBody": false,
+        "transitionDuration": 0.4,
+        "textStyle": {
+            "fontSize": 14
+        },
+        "borderWidth": 0,
+        "padding": 5,
+        "order": "seriesAsc"
+    },
+    "xAxis3D": {
+        "name": "206Pb/204Pb",
+        "show": true,
+        "scale": true,
+        "grid3DIndex": 0,
+        "nameGap": 20,
+        "nameTextStyle": {
+            "fontWeight": "bold",
+            "fontFamily": "Times New Roman"
+        },
+        "logBase": 10,
+        "type": "value",
+        "axisLabel": {
+            "show": true,
+            "margin": 8,
+            "fontWeight": "bold",
+            "fontFamily": "Times New Roman"
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        }
+    },
+    "yAxis3D": {
+        "name": "207Pb/204Pb",
+        "show": true,
+        "scale": true,
+        "grid3DIndex": 0,
+        "nameGap": 20,
+        "nameTextStyle": {
+            "fontWeight": "bold",
+            "fontFamily": "Times New Roman"
+        },
+        "logBase": 10,
+        "type": "value",
+        "axisLabel": {
+            "show": true,
+            "margin": 8,
+            "fontWeight": "bold",
+            "fontFamily": "Times New Roman"
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        }
+    },
+    "zAxis3D": {
+        "name": "208Pb/204Pb",
+        "show": true,
+        "scale": true,
+        "grid3DIndex": 0,
+        "nameGap": 20,
+        "nameTextStyle": {
+            "fontWeight": "bold",
+            "fontFamily": "Times New Roman"
+        },
+        "logBase": 10,
+        "type": "value",
+        "axisLabel": {
+            "show": true,
+            "margin": 8,
+            "fontWeight": "bold",
+            "fontFamily": "Times New Roman"
+        },
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        }
+    },
+    "grid3D": {
+        "boxWidth": 80,
+        "boxHeight": 80,
+        "boxDepth": 80,
+        "splitLine": {
+            "show": true,
+            "lineStyle": {
+                "show": true,
+                "width": 1,
+                "opacity": 1,
+                "curveness": 0,
+                "type": "solid"
+            }
+        },
+        "environment": "auto",
+        "viewControl": {
+            "autoRotate": false,
+            "autoRotateSpeed": 10,
+            "rotateSensitivity": 1,
+            "alpha": 20,
+            "beta": 40,
+            "minAlpha": -90,
+            "maxAlpha": 90
+        },
+        "zlevel": -10,
+        "left": "auto",
+        "top": "auto",
+        "right": "auto",
+        "bottom": "auto"
+    },
+    "title": [
+        {
+            "show": true,
+            "target": "blank",
+            "subtarget": "blank",
+            "padding": 5,
+            "itemGap": 10,
+            "textAlign": "auto",
+            "textVerticalAlign": "auto",
+            "triggerEvent": false
+        }
+    ],
+    "toolbox": {
+        "show": false,
+        "orient": "horizontal",
+        "itemSize": 15,
+        "itemGap": 10,
+        "left": "80%",
+        "feature": {
+            "saveAsImage": {
+                "type": "png",
+                "backgroundColor": "auto",
+                "connectedBackgroundColor": "#fff",
+                "show": true,
+                "title": "\u4fdd\u5b58\u4e3a\u56fe\u7247",
+                "pixelRatio": 1
+            },
+            "restore": {
+                "show": true,
+                "title": "\u8fd8\u539f"
+            },
+            "dataView": {
+                "show": true,
+                "title": "\u6570\u636e\u89c6\u56fe",
+                "readOnly": false,
+                "lang": [
+                    "\u6570\u636e\u89c6\u56fe",
+                    "\u5173\u95ed",
+                    "\u5237\u65b0"
+                ],
+                "backgroundColor": "#fff",
+                "textareaColor": "#fff",
+                "textareaBorderColor": "#333",
+                "textColor": "#000",
+                "buttonColor": "#c23531",
+                "buttonTextColor": "#fff"
+            },
+            "dataZoom": {
+                "show": true,
+                "title": {
+                    "zoom": "\u533a\u57df\u7f29\u653e",
+                    "back": "\u533a\u57df\u7f29\u653e\u8fd8\u539f"
+                },
+                "icon": {},
+                "filterMode": "filter"
+            },
+            "magicType": {
+                "show": true,
+                "type": [
+                    "line",
+                    "bar",
+                    "stack",
+                    "tiled"
+                ],
+                "title": {
+                    "line": "\u5207\u6362\u4e3a\u6298\u7ebf\u56fe",
+                    "bar": "\u5207\u6362\u4e3a\u67f1\u72b6\u56fe",
+                    "stack": "\u5207\u6362\u4e3a\u5806\u53e0",
+                    "tiled": "\u5207\u6362\u4e3a\u5e73\u94fa"
+                },
+                "icon": {}
+            }
+        }
+    }
+};
+        chart_00.setOption(option_00);
+    </script>
+</body>
+</html>
